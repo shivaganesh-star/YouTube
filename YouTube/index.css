@@ -1,0 +1,133 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,900;1,600&family=Raleway:wght@600&family=Roboto:wght@300;400&display=swap');
+
+.channel-icon{
+    width: 36px;
+    height: 36px;
+}
+a{
+    text-decoration: none;
+    
+}
+*, *::before,*::after{
+    font-family:  'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.video-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 1.5rem;
+    border-top:4px solid #ccc ;
+
+}
+.video-section:first-child{
+    border:none;
+}
+.video-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail{
+    position: relative;
+    display: flex;
+}
+.thumbnail::before{
+    content: attr(data-duration);
+    position: absolute;
+    color:white;
+    background-color: rgba(0, 0, 0, .85);
+    right: 5px;
+    bottom: 5px;
+    padding: .1em .3em ;
+    border-radius:.3em ;
+    font-size: .9rem;
+    /* height: 25%; */
+    
+}
+.thumbnail-image{
+    width: 100%;
+    height: 100%;
+    min-width: 250px ;
+    min-height: 150px;
+    background-color: #aaa;
+}
+.video-bottom-section{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+
+}
+.channel-icon{
+    margin-right: .7rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #AAA;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
+
+}
+.video-title{
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: black;
+}
+.video-channel-name{
+    margin-bottom: .1rem;
+    text-decoration: none;
+    color: #555;
+    transition:color 150ms
+
+}
+.video-channel-name:hover{
+    color: #111;
+}
+.video-channel-name,.video-metadata{
+    color: #555;
+}
+.video-section-title{
+    grid-column: 1/-1;
+    margin: -.5rm 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5rem;
+}
+.video-section-title-closer{
+    border:none;
+    background: none;
+    padding: 0;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+}
+.video{
+    background-color: #F9F9F9;
+}
+/* .categories{
+    padding: 1rem 2rem;
+    border-top: 1px solid #999;
+    border-bottom:1px solid #999 ;
+    
+} */
+.category-section{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+/* .category{
+    margin-right: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+} */
